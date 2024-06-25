@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/seroxen.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SeroXen</title>
+    <meta name="description" content="SeroXen">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link href="css/css.css" rel="stylesheet">
+
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            padding: 20px 100px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .seroxen {
+            font-size: 33px;
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 10;
+        }
+
+        .nabvar a {
+            position: relative;
+            font-size: 19px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: transparent;
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 100;
+            color: #fff;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1050;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            outline: 0;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #aaa;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <script src="js/modernizr.js"></script>
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    <link href="https://cdn.sellix.io/static/css/embed.css" rel="stylesheet"/>
+    <script src="img/date.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="seroxen">SeroXen</a>
+
+        <nav class="nabvar">
+            <a href="index.html">Back</a>
+        </nav>
+    </header>
+
+    <div class="jumbotron d-flex align-items-center">
+        <div class="container text-center">
+            <h6>SeroXen is a Remote Access Tool based on the other tool Quasar and has multiple more features such as Reset Presistence, R77 Rootkit, HVNC, and much much more...</h6>
+          </div>
+        <div class="rectangle-1"></div>
+        <div class="rectangle-2"></div>
+        <div class="rectangle-transparent-1"></div>
+        <div class="rectangle-transparent-2"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="triangle triangle-1">
+            <img src="img/obj_triangle.png" alt="">
+        </div>
+        <div class="triangle triangle-2">
+            <img src="img/obj_triangle.png" alt="">
+        </div>
+        <div class="triangle triangle-3">
+            <img src="img/obj_triangle.png" alt="">
+        </div>
+        <div class="triangle triangle-4">
+            <img src="img/obj_triangle.png" alt="">
+        </div>
+    </div>
+
+    <div id="ModalPlaceholder" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Under construction...</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Netcat - Credits to C5
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="vendor/bootstrap/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js "></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vendor/isotope/isotope.min.js"></script>
+    <script src="vendor/lightcase/lightcase.js"></script>
+    <script src="vendor/waypoints/waypoint.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/app.min.js "></script>
+
+    <script>
+        var modal = document.getElementById("ModalPlaceholder");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        var triggers = document.getElementsByClassName("modal-trigger");
+
+        for (var i = 0; i < triggers.length; i++) {
+            triggers[i].onclick = function() {
+                modal.style.display = "flex";
+            }
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
